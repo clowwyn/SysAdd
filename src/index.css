@@ -413,6 +413,10 @@ body {
   border-color: #059669;
 }
 
+.quiz-type-card.engine-electrical:hover {
+  border-color: #f59e0b;
+}
+
 .quiz-type-icon {
   display: inline-flex;
   align-items: center;
@@ -430,6 +434,11 @@ body {
 
 .situational .quiz-type-icon {
   background: linear-gradient(135deg, #059669, #10b981);
+  color: white;
+}
+
+.engine-electrical .quiz-type-icon {
+  background: linear-gradient(135deg, #f59e0b, #f97316);
   color: white;
 }
 
@@ -488,6 +497,15 @@ body {
 
 .situational .quiz-type-button:hover {
   background: linear-gradient(135deg, #047857, #059669);
+}
+
+.engine-electrical .quiz-type-button {
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  color: white;
+}
+
+.engine-electrical .quiz-type-button:hover {
+  background: linear-gradient(135deg, #d97706, #ea580c);
 }
 
 .landing-stats {

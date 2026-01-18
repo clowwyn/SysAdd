@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Settings, Users, Award } from 'lucide-react';
+import { BookOpen, Settings, Users, Award, Zap } from 'lucide-react';
 
 const LandingPage = ({ onQuizSelect }) => {
   return (
@@ -10,9 +10,9 @@ const LandingPage = ({ onQuizSelect }) => {
           <div className="landing-icon">
             <Settings size={48} />
           </div>
-          <h1 className="landing-title">System Administration Quiz</h1>
+          <h1 className="landing-title">Quiz Reviewer Platform</h1>
           <p className="landing-subtitle">
-            Test your knowledge with comprehensive System Administration questions
+            Test your knowledge with comprehensive quizzes
           </p>
         </div>
 
@@ -55,6 +55,25 @@ const LandingPage = ({ onQuizSelect }) => {
             </div>
             <button className="quiz-type-button">Start Scenarios</button>
           </div>
+
+          <div 
+            className="quiz-type-card engine-electrical"
+            onClick={() => onQuizSelect('engine-electrical')}
+          >
+            <div className="quiz-type-icon">
+              <Zap size={32} />
+            </div>
+            <h3 className="quiz-type-title">Engine Electrical NC-II</h3>
+            <p className="quiz-type-description">
+              Comprehensive reviewer for Engine Electrical Systems covering batteries, starters, alternators, and ignition systems
+            </p>
+            <div className="quiz-type-features">
+              <span className="feature-tag">• Identification Questions</span>
+              <span className="feature-tag">• Enumeration</span>
+              <span className="feature-tag">• Parts Labeling</span>
+            </div>
+            <button className="quiz-type-button">Start Engine Electrical</button>
+          </div>
         </div>
 
         {/* Stats */}
@@ -62,21 +81,21 @@ const LandingPage = ({ onQuizSelect }) => {
           <div className="stat-item">
             <Award size={24} />
             <div className="stat-content">
-              <span className="stat-number">194</span>
+              <span className="stat-number">260</span>
               <span className="stat-label">Total Questions</span>
             </div>
           </div>
           <div className="stat-item">
             <BookOpen size={24} />
             <div className="stat-content">
-              <span className="stat-number">50</span>
-              <span className="stat-label">Scenarios</span>
+              <span className="stat-number">66</span>
+              <span className="stat-label">Engine Electrical</span>
             </div>
           </div>
           <div className="stat-item">
             <Settings size={24} />
             <div className="stat-content">
-              <span className="stat-number">2</span>
+              <span className="stat-number">3</span>
               <span className="stat-label">Quiz Types</span>
             </div>
           </div>
@@ -84,7 +103,7 @@ const LandingPage = ({ onQuizSelect }) => {
 
         {/* Footer */}
         <div className="landing-footer">
-          <p>Choose your preferred quiz type to begin testing your System Administration knowledge</p>
+          <p>Choose your preferred quiz type to begin testing your knowledge</p>
         </div>
       </div>
     </div>
