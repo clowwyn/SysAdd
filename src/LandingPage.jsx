@@ -25,7 +25,7 @@ const LandingPage = ({ onQuizSelect }) => {
             <div className="quiz-type-icon">
               <BookOpen size={32} />
             </div>
-            <h3 className="quiz-type-title">Multiple Choice Quiz</h3>
+            <h3 className="quiz-type-title">SysAd Multiple Choice Quiz</h3>
             <p className="quiz-type-description">
               144 comprehensive questions covering 9 weeks of System Administration topics
             </p>
@@ -44,7 +44,7 @@ const LandingPage = ({ onQuizSelect }) => {
             <div className="quiz-type-icon">
               <Users size={32} />
             </div>
-            <h3 className="quiz-type-title">Situational Scenarios</h3>
+            <h3 className="quiz-type-title">SysAd Situational Scenarios</h3>
             <p className="quiz-type-description">
               Real-world scenarios and problem-solving situations you'll face as a System Administrator
             </p>
